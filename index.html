@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake</title>
+</head>
+<body>
+	
+	<div id="playground"></div>
+
+
+	<script src="game/Helpers/Helpers.js"></script>
+	<script src="game/Config.js"></script>
+	<script src="game/Game.js"></script>
+	<script src="game/Canvas.js"></script>
+	<script src="game/Collision.js"></script>
+	<script src="game/Food.js"></script>
+	<script src="game/Snake/SnakeMovement.js"></script>
+	<script src="game/Snake/SnakeSegment.js"></script>
+	<script src="game/Snake/Snake.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function(e) {
+			window.game = new SnakeGame.Game;
+			game.start();
+		}, false);
+	</script>
+</body>
+</html>
