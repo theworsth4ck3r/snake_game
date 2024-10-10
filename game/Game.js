@@ -53,7 +53,7 @@ SnakeGame.Game = (function () {
 
 				this.addFoodToGame();
 				this.checkIsFoodIsEaten();
-				this.checkSnakeCollisionWithHimsleft();
+				this.checkSnakeCollisionWithItself();
 
 				this.game();
 
@@ -81,7 +81,7 @@ SnakeGame.Game = (function () {
 			}
 		}
 
-		checkSnakeCollisionWithHimsleft() {
+		checkSnakeCollisionWithItself() {
 			let isCollision = SnakeGame.Collision.checkSnakeCollision(SnakeGame.Snake.getHead());
 
 			if (isCollision) this.restartGame();
